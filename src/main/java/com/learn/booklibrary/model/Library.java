@@ -21,7 +21,7 @@ public class Library {
 
     private String studentName;
     private String branch;
-    private String rank;
+    private Integer rank;
 
 
 
