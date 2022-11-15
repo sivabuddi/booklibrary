@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.*;
 
 @RestController
 // REST controller for accessing end points for GET, POST, PUT and DELETE.
@@ -22,7 +23,7 @@ public class LibraryController {
     }
 
     @GetMapping("/single/{id}")
-    public Library getSingleBook(@PathVariable Integer id){
+    public Optional<Library> getSingleBook(@PathVariable Integer id){
         return this.libraryService.getSingleBook(id);
     }
 
