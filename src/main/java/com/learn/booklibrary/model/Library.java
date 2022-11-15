@@ -8,12 +8,12 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-
+@Entity
 public class Library {
 
     @Id
