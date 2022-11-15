@@ -26,6 +26,15 @@ public class LibraryService {
 
     // display only single book
 
+    public Library getSingleBook(Integer id){
+        for(int i=0;i<this.libraryList.size();i++){
+            Library library1 = this.libraryList.get(i);
+            if(library1.getLibraryId().equals(id))
+                return library1;
+        }
+        return null;
+    }
+
 
     // add new book
 

@@ -21,6 +21,11 @@ public class LibraryController {
         return this.libraryService.getAllBooks();
     }
 
+    @GetMapping("/single/{id}")
+    public Library getSingleBook(@PathVariable Integer id){
+        return this.libraryService.getSingleBook(id);
+    }
+
     @PostMapping("/add")
     public String addNewBook(@RequestBody  Library library){
         return this.libraryService.addNewBook(library);
