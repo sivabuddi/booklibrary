@@ -1,3 +1,85 @@
+1) End points does not matter, but still we can communicate and exchange the data.
+2) Irrespective programming language, operating system, end points platform  but still host application
+communicate and exchange the data among the applications we are using web services.
+3) In other words, in order to establish interoperable communication among the applications
+we are using web services irrespective of end points, programming languages.
+
+Web Services:
+
+Rest Web Services --> which  makes use of HTTP.(Security not up to mark)
+
+SOAP Web Services --> SOAP -->internally makes use of HTTP. (Banking environment,More secured)
+
+HTTP(Hypertext Transfer Protocol) Protocol:
+
+GET (Fetch some data)
+POST (Insert the data)
+PUT (Update the data)
+DELETE (delete the data)
+HEAD
+OPTIONS
+PATCH
+
+By using HTTP, we will perform CRUD operations.
+C - Create  R --Read  U -- Update  D- Delete
+
+Web Services:
+
+SOAP (Simple Object Access Protocol)
+  soap is layer on top of Http
+  xml (Data) -- we can create user defined tags which we can't do  in case of HTML.
+  Data exchange can be done among applications using XML in case of SOAP
+  We are using XML as data format, web technologies will not understand directly instead we need
+  parsers will help to understand such as DOM, SAX parsers.
+  DOM, SAX parsers will convert the data which make web tech to understand. So make these conversions,
+  It requires memory and process. It reduces application performance.
+  It is more secured compare to REST (Security is more important than Performance).
+  Security is the highest priority, SOAP is right choice.
+
+
+
+
+REST (Representational State Transfer Protocol)
+  Http
+  Json -- Javascript Object Notation(Data) --It is a key and value pair.
+  Data exchange can be done among applications using Json in case of REST.
+  Json format will understand without any intermediate parsers make to understand. So performance
+  is high compare SOAP.
+  Performance is high priority than security, then move to REST.
+
+Evolving:
+
+J2SE, J2EE, J2ME, Android,
+Ejbs,
+Struts Framework
+Spring Framework (MVC Architecture)
+
+M --Model (Pojo, It is java bean where we can write the business logic) -- Business Layer
+V --View (Presentation Layer)
+C --Controller (Controller)
+
+Inversion of Controller
+Dependency Injection (Autowired)
+
+Spring Boot:
+
+Spring Boot is layer on top of Spring Framework. The name suggest, bootstrap the spring applications.
+Spring boot will help you speed to bootstrap the spring applications.
+It will provide the embedded application server (Tomcat) which is default.
+It manages dependency modules automatically in pom.xml (Project Object Module)
+It takes care of autoconfiguration / general configuration.
+It takes care of transactional management.
+It is  more secure.x
+
+
+
+
+
+
+
+
+
+Enabling different environments using profilers.
 Environments:
    Dev (Developers),
    Testing/ uat (Testers),
@@ -6,3 +88,7 @@ Environments:
 Spring profiles:
 
 
+
+References:
+
+1) https://openclassrooms.com/en/courses/5684146-create-web-applications-efficiently-with-the-spring-boot-mvc-framework/6156961-organize-your-application-code-in-three-tier-architecture
