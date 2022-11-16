@@ -1,0 +1,8 @@
+Environments:
+   Dev (Developers),
+   Testing/ uat (Testers),
+   Prod(real users)
+
+Spring profiles:
+
+
