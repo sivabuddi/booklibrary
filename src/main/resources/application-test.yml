@@ -1,0 +1,4 @@
+spring:
+  message: Welcome to Test Environment
+server:
+  port: 8083

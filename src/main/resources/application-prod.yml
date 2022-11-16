@@ -1,0 +1,4 @@
+spring:
+  message: Welcome to prod Environment
+server:
+  port: 808

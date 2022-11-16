@@ -1,0 +1,6 @@
+spring:
+  message: Welcome to Dev Environment
+server:
+  port: 8081
+
+
