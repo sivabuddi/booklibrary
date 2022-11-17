@@ -1,0 +1,20 @@
+MVC2 Architecture:(De facto MVC )
+
+Advantages:
+1) Clean separation between logics.
+2) The modification done in one layer logics does not influence on other layer.
+3) Maintenance and enhancement of project becomes easy.
+4) Parallel development is possible which leads to  productivity.
+5) It is de facto industrial standard to develop web applications.
+6) If use EJB, Spring, Hibernate to develop model layers certain middle ware services can be used
+   built-in middle ware services.
+
+
+Disadvantages:
+1) For parallel development multiple programmers are required.
+2) Knowledge on multiple technologies is required.
+
+
+
+References:
+1) https://www.youtube.com/watch?v=Zu5E8jGqoUU&list=PLVlQHNRLflP-wlUj1MAuLwiMekHpP-yQu&index=21
