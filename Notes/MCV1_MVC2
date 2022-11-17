@@ -1,0 +1,10 @@
+Understanding MVC1 and MVC2:
+=============================
+
+1) If we use single component for developing view and controller layer logics , if we take separate
+component for model layer then it is called MVC1 Architecture.
+
+2) If we use three different components for three different layers then it is called MVC2 Architecture.
+
+References:
+https://www.youtube.com/watch?v=_kKEjRUqVqs&list=PLVlQHNRLflP-wlUj1MAuLwiMekHpP-yQu&index=19
