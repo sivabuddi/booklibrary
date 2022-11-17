@@ -1,0 +1,13 @@
+Understanding MVC Architecture:
+MVC Architecture demands Layered Application Development.
+1) Keep the logic in different components which makes application more readable and reusable.
+2) Parallel development is possible on different component due to multiple developers involved in project development.
+3) More productive.
+4) MVC Architecture is based on J2EE Technologies. It also enforces to work on Layered architecture.
+
+M --> Model --> Data --> Business Logic (Service Class / Business Delegation Class) + Persistence Logic (Data Access Object Class)
+V --> View  --> Presentation  Logic
+C --> Controller --> Integration Layer / Supervisor / Controlling Logic / Monitoring Logic / Connectivity Logic
+
+References:
+https://www.youtube.com/watch?v=lKk71o0bFoA&list=PLVlQHNRLflP-wlUj1MAuLwiMekHpP-yQu&index=18
