@@ -1,0 +1,61 @@
+Spring, Hibernate Frameworks role in MVC architecture Application development
+===============================================================================
+MVC
+
+M -> Model --> Business Logic (Services / Business Delegation) + Persistence Logic
+V -> View  --> Presentation Logic -->
+C -->Controller --> Controller / Integration Logic --> Capable of monitors and controls various operations in the application.
+     (It takes the request from client / browser and pass the request to model layer / business component and gather results
+       from business component and pass those results to view layer component) / Supervisor
+
+Evaluation of MVC:
+
+Version 1:
+jsp (view) ---> Servlet (Controller) --> Java class (Model / Business Logic + Persistence Logic) --> Database s/w
+
+Version 2:
+jsp(view) ----> Servlet (Controller) --> EJB SessionBean component(Model / Business Logic + Persistence Logic) --> Database s/w
+
+Version 3:
+jsp(view) ---> Servlet (Controller) --> EJB Session Bean(Business Logic) + EJB Entity Bean / DAO(Persistence Logic) + Database s/w
+Here business logic is seperated from business logic.
+
+Version 4:
+jsp(view) ---> Servlet(Controller) -->EJB Session Bean(BusinessLogic) + java class JDBC/ DAO(Persistence Logic) + Database s/w
+Here business logic is seperated from business logic.
+
+Version5:
+Struts(View + Controller) --> EJB Session Bean (Business Logic) + java class JDBC/ DAO (Persistence Logic) + Database s/w
+
+
+Version6:
+Struts(View + Controller) --> EJB Session Bean (Business Logic) + Hibernate (ORM)(Persistence Logic) + Database s/w
+
+
+To get the middle ware services in lightweight environment, to replacing EJB Session Bean with Spring OCore model +AOP.
+
+Version6:
+Struts(View + Controller) --> (Spring Core + AOP) for business logic  + Hibernate (ORM)(Persistence Logic) + Database s/w
+
+
+Version7:
+Sprint MVC (View + Controller) --> (Spring Core + AOP) for business logic and middle ware services + Spring JDBC(plain jdbc logic) / Spring ORM(Hibernate persistence logic)(Persistence Logic) + Database s/w
+
+List of view layer technologies:
+html,jsp,ajax, jquery, angular.js, xhtml, freemarker, volocity.
+
+List of Controller layer technologies:
+Servlet, ServletFilter
+
+List of frameworks to develop view and controller layers:
+Struts, spring mvc, ADF(Application Development Framework), webwork, Tapstrey, Cocoon, jsf)
+
+List of technologies and framework to develop model layer persistence layer.
+JDBC, Hibernate, toplink, ibatis,JDO, OJB, EJB Entity Beans, Spring ORM, Spring JDBC.
+
+
+List of technologies and framework to develop model layer business logic
+java class with java bean, EJB Session Beans, RMI, Web Services, Spring core, Spring JEE etc.
+
+References:
+1) https://www.youtube.com/watch?v=qipJOVcNOuQ&list=PLVlQHNRLflP-wlUj1MAuLwiMekHpP-yQu&index=11
